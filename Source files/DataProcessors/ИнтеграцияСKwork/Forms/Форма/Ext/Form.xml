@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПолучитьТокен" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьТокен</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьТокенРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаПолучитьДиалоги" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьДиалоги</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьДиалогиРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="ФормаПолучитьПрофиль" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьПрофиль</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьПрофильРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Логин" id="1">
+			<DataPath>Объект.Логин</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛогинКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Пароль" id="4">
+			<DataPath>Объект.Пароль</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Токен" id="7">
+			<DataPath>Объект.Токен</DataPath>
+			<ContextMenu name="ТокенКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Ответ" id="14">
+			<DataPath>Ответ</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОтветКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ОтветРасширеннаяПодсказка" id="16"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнтеграцияСKwork</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Ответ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Куки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Куки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьТокен" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить токен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить токен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьТокен</Action>
+		</Command>
+		<Command name="ПолучитьДиалоги" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить диалоги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить диалоги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДиалоги</Action>
+		</Command>
+		<Command name="ПолучитьПрофиль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить профиль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить профиль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПрофиль</Action>
+		</Command>
+	</Commands>
+</Form>

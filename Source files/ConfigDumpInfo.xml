@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.13">
+	<ConfigVersions>
+		<Metadata name="Configuration.Конфигурация" id="95655b0a-3da7-42b4-b70d-eac1b34c8777" configVersion="061f2f5e9efaee44a4aab249210527e900000000"/>
+		<Metadata name="DataProcessor.ИнтеграцияСKwork" id="367f42db-fd48-4cf6-9de4-44ec08ec7181" configVersion="ef56857d30a0e94aacd94eec8e325a0500000000">
+			<Metadata name="DataProcessor.ИнтеграцияСKwork.Attribute.Пароль" id="c6d5cbe5-e0bf-4d6e-b4ef-91c9c39b5add"/>
+			<Metadata name="DataProcessor.ИнтеграцияСKwork.Attribute.Логин" id="cf5f06ee-0633-48f2-9817-d6981a362bf6"/>
+			<Metadata name="DataProcessor.ИнтеграцияСKwork.Attribute.Токен" id="e9650a7d-b3dd-40e8-b7a3-fb06483adf6c"/>
+		</Metadata>
+		<Metadata name="DataProcessor.ИнтеграцияСKwork.Form.Форма" id="45cbb400-0dc4-42e5-850b-a6a2581cd14b" configVersion="0896fe08d7194b4b8b26f16ba31ba9d100000000"/>
+		<Metadata name="DataProcessor.ИнтеграцияСKwork.Form.Форма.Form" id="45cbb400-0dc4-42e5-850b-a6a2581cd14b.0" configVersion="6f6f5ff5d5c2954989e29ee3bf38b45b00000000"/>
+		<Metadata name="Language.Русский" id="afb7d9e9-75b6-442a-840c-385bd495ffe0" configVersion="f941007695a9fa47bb4a6ec170270b8400000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
